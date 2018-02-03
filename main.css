@@ -16,17 +16,17 @@ body {
 main {
   position: relative;
   background-color: #455A64;
+  color: #fff;
   height: 45vh;
   text-align: center;
-  color: #fff;
 }
 
 h1 {
+  margin: 0;
   padding: 1.4rem;
   font-size: 2rem;
-  margin: 0;
-  text-align: center;
   font-weight: 800;
+  text-align: center;
 }
 
 img {
@@ -36,10 +36,10 @@ img {
 
 .bookmark-input-field {
   border: 1px solid #d0d2d3;
+  padding-left: .5rem;
+  font-size: 2.2rem;
   height: 2.8rem;
   width: 85%;
-  font-size: 2.2rem;
-  padding-left: .5rem;
   letter-spacing: 2px;
 }
 
@@ -47,26 +47,25 @@ img {
   color: #d0d2d3;
 }
 
-
 #input-url {
   margin: 1.4rem 0;
 }
 
 #input-submit {
+  border: none;
   background-color: #ffc107;
   color: #fff;
-  border: none;
   font-size: 1.3rem;
   font-weight: 800;
 }
 
 .cards {
+  margin: 1.3rem 1rem;
   border: 2px solid #607d8b;
   padding: .5rem 1rem;
-  margin: 1.3rem 1rem;
   background-color: #fff;
-  height: 8.2rem;
   color: #455a64;
+  height: 8.2rem;
 }
 
 h2 {
@@ -81,8 +80,8 @@ a {
 }
 
 .card__url {
-  color: #607d8b;
   padding: 1rem 0 1rem;
+  color: #607d8b;
   font-size: 1rem;
 }
 
