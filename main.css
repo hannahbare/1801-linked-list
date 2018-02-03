@@ -5,26 +5,28 @@
 }
 
 body {
+  position: relative;
   margin: 0;
+  background-color: #cfd8dc;
   font-family: 'Open Sans', sans-serif;
   font-size: 12px;
-  background-color: #cfd8dc;
   font-weight: 400;
 }
 
-section {
+main {
+  position: relative;
   background-color: #455A64;
-  height: 43vh;
-  text-align: center;
   color: #fff;
+  height: 45vh;
+  text-align: center;
 }
 
 h1 {
+  margin: 0;
   padding: 1.4rem;
   font-size: 2rem;
-  margin: 0;
-  text-align: center;
   font-weight: 800;
+  text-align: center;
 }
 
 img {
@@ -34,27 +36,70 @@ img {
 
 .bookmark-input-field {
   border: 1px solid #d0d2d3;
+  padding-left: .5rem;
+  font-size: 2.2rem;
   height: 2.8rem;
   width: 85%;
-  font-size: 2.2rem;
-  padding-left: .5rem;
+  letter-spacing: 2px;
 }
 
 .bookmark-input-field::placeholder {
   color: #d0d2d3;
 }
 
-
 #input-url {
   margin: 1.4rem 0;
 }
 
 #input-submit {
+  border: none;
   background-color: #ffc107;
   color: #fff;
-  border: none;
+  font-size: 1.3rem;
+  font-weight: 800;
 }
 
-fieldset {
+.cards {
+  margin: 1.3rem 1rem;
+  border: 2px solid #607d8b;
+  padding: .5rem 1rem;
   background-color: #fff;
+  color: #455a64;
+  height: 8.2rem;
 }
+
+h2 {
+  margin: 0;
+  padding-bottom: 0.45rem;
+  border-bottom: 2px solid #cfd8dc;
+  font-size: 1.3rem;
+}
+
+a {
+  color: #455a64;
+}
+
+.card__url {
+  padding: 1rem 0 1rem;
+  color: #607d8b;
+  font-size: 1rem;
+}
+
+.cards__read-delete {
+  border-top: 1px solid #cfd8dc;
+  padding-top: .4rem;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+#card__url--right {
+  float: right;
+}
+
+
+
+
+
+
+
+
