@@ -1,0 +1,60 @@
+@import "reset.css"
+
+* {
+ box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  background-color: #cfd8dc;
+  font-weight: 400;
+}
+
+section {
+  background-color: #455A64;
+  height: 43vh;
+  text-align: center;
+  color: #fff;
+}
+
+h1 {
+  padding: 1.4rem;
+  font-size: 2rem;
+  margin: 0;
+  text-align: center;
+  font-weight: 800;
+}
+
+img {
+  height: 2rem;
+  width: 2rem;
+}
+
+.bookmark-input-field {
+  border: 1px solid #d0d2d3;
+  height: 2.8rem;
+  width: 85%;
+  font-size: 2.2rem;
+  padding-left: .5rem;
+}
+
+.bookmark-input-field::placeholder {
+  color: #d0d2d3;
+}
+
+
+#input-url {
+  margin: 1.4rem 0;
+}
+
+#input-submit {
+  background-color: #ffc107;
+  color: #fff;
+  border: none;
+}
+
+fieldset {
+  background-color: #fff;
+}
