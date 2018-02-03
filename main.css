@@ -9,20 +9,22 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 12px;
   background-color: #cfd8dc;
+  font-weight: 400;
 }
 
 section {
   background-color: #455A64;
-  height: 50vh;
+  height: 43vh;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
 }
 
 h1 {
-  padding: 1rem;
+  padding: 1.4rem;
   font-size: 2rem;
   margin: 0;
   text-align: center;
+  font-weight: 800;
 }
 
 img {
@@ -31,21 +33,28 @@ img {
 }
 
 .bookmark-input-field {
-  height: 2.4rem;
+  border: 1px solid #d0d2d3;
+  height: 2.8rem;
   width: 85%;
-  font-size: 1.4rem;
+  font-size: 2.2rem;
   padding-left: .5rem;
-  opacity: 2;
 }
+
+.bookmark-input-field::placeholder {
+  color: #d0d2d3;
+}
+
 
 #input-url {
-  margin: 1rem 0;
+  margin: 1.4rem 0;
 }
-/*
+
 #input-submit {
-  height: 2.4rem;
-}*/
+  background-color: #ffc107;
+  color: #fff;
+  border: none;
+}
 
 fieldset {
-  background-color: #ffffff;
+  background-color: #fff;
 }
