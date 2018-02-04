@@ -90,7 +90,7 @@ a {
 a:hover {
  color: #445A64;
  text-decoration: underline;
- text-decoration-color:#ffc107;
+ text-decoration-color: #ffc107;
 }
 
 .card-hover:hover {
