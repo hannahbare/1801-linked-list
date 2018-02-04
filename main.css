@@ -59,6 +59,11 @@ img {
   font-weight: 800;
 }
 
+#input-submit:hover {
+  background-color: #ffd773;
+
+}
+
 .cards {
   margin: 1.3rem 1rem;
   border: 2px solid #607d8b;
@@ -79,6 +84,15 @@ a {
   color: #455a64;
 }
 
+a:hover {
+  /*color: #445A64;*/
+  text-decoration-line: 1px solid #ffc107;
+}
+
+/*.card-hover:hover {
+  font-weight: 800;
+}*/
+
 .card__url {
   padding: 1rem 0 1rem;
   color: #607d8b;
@@ -95,11 +109,3 @@ a {
 #card__url--right {
   float: right;
 }
-
-
-
-
-
-
-
-
