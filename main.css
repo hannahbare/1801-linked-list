@@ -1,105 +1,115 @@
 @import "reset.css"
 
 * {
- box-sizing: border-box;
+box-sizing: border-box;
 }
 
 body {
-  position: relative;
-  margin: 0;
-  background-color: #cfd8dc;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 12px;
-  font-weight: 400;
+ position: relative;
+ margin: 0;
+ background-color: #cfd8dc;
+ font-family: 'Open Sans', sans-serif;
+ font-size: 12px;
+ font-weight: 400;
 }
 
 main {
-  position: relative;
-  background-color: #455A64;
-  color: #fff;
-  height: 45vh;
-  text-align: center;
+ position: relative;
+ background-color: #455A64;
+ color: #fff;
+ height: 45vh;
+ text-align: center;
 }
 
 h1 {
-  margin: 0;
-  padding: 1.4rem;
-  font-size: 2rem;
-  font-weight: 800;
-  text-align: center;
+ margin: 0;
+ padding: 1.4rem;
+ font-size: 2rem;
+ font-weight: 800;
+ text-align: center;
 }
 
 img {
-  height: 2rem;
-  width: 2rem;
+  vertical-align: text-bottom;
+ height: 2.8rem;
+ width: 2.8rem;
 }
 
 .bookmark-input-field {
-  border: 1px solid #d0d2d3;
-  padding-left: .5rem;
-  font-size: 2.2rem;
-  height: 2.8rem;
-  width: 85%;
-  letter-spacing: 2px;
+ border: 1px solid #d0d2d3;
+ padding-left: .5rem;
+ font-size: 2.2rem;
+ height: 2.8rem;
+ width: 85%;
+ letter-spacing: 2px;
 }
 
 .bookmark-input-field::placeholder {
-  color: #d0d2d3;
+ color: #d0d2d3;
 }
 
 #input-url {
-  margin: 1.4rem 0;
+ margin: 1.4rem 0;
 }
 
 #input-submit {
-  border: none;
-  background-color: #ffc107;
-  color: #fff;
-  font-size: 1.3rem;
-  font-weight: 800;
+ border: none;
+ background-color: #ffc107;
+ color: #fff;
+ font-size: 1.3rem;
+ font-weight: 800;
+}
+
+#input-submit:hover {
+ background-color: #ffd773;
+
 }
 
 .cards {
-  margin: 1.3rem 1rem;
-  border: 2px solid #607d8b;
-  padding: .5rem 1rem;
-  background-color: #fff;
-  color: #455a64;
-  height: 8.2rem;
+ margin: 1.3rem 1rem;
+ border: 2px solid #607d8b;
+ padding: .5rem 1rem;
+ background-color: #fff;
+ color: #455a64;
+ height: 8.2rem;
 }
 
 h2 {
-  margin: 0;
-  padding-bottom: 0.45rem;
-  border-bottom: 2px solid #cfd8dc;
-  font-size: 1.3rem;
+ margin: 0;
+ padding-bottom: 0.45rem;
+ border-bottom: 2px solid #cfd8dc;
+ font-size: 1.3rem;
 }
 
 a {
-  color: #455a64;
+ color: #455a64;
+ text-decoration: underline;
+ text-decoration-color: #f2f4f4;
+}
+
+a:hover {
+ color: #445A64;
+ text-decoration: underline;
+ text-decoration-color:#ffc107;
+}
+
+.card-hover:hover {
+ font-weight: 800;
 }
 
 .card__url {
-  padding: 1rem 0 1rem;
-  color: #607d8b;
-  font-size: 1rem;
+ padding: 1rem 0 1rem;
+ color: #607d8b;
+ font-size: 1rem;
 }
 
 .cards__read-delete {
-  border-top: 1px solid #cfd8dc;
-  padding-top: .4rem;
-  font-size: 1rem;
-  text-decoration: none;
+ border-top: 1px solid #cfd8dc;
+ padding-top: .4rem;
+ font-size: 1rem;
+ text-decoration: none;
 }
 
 #card__url--right {
-  float: right;
+ float: right;
 }
-
-
-
-
-
-
-
-
