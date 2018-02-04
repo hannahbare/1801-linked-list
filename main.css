@@ -62,7 +62,7 @@ img {
 
 #input-submit:hover {
  background-color: #ffd773;
-
+ curser: pointer;
 }
 
 article {
@@ -85,10 +85,12 @@ a {
  color: #455a64;
  text-decoration: underline;
  text-decoration-color: #f2f4f4;
+ text-decoration-style: bold;
 }
 
 a:hover {
  color: #445A64;
+ curser: pointer;
  text-decoration: underline;
  text-decoration-color: #ffc107;
 }
@@ -110,6 +112,10 @@ a:hover {
  text-decoration: none;
 }
 
-#card__url--right {
+#card__url--delete {
  float: right;
+}
+
+.read {
+  color: #f05a28;
 }
