@@ -62,10 +62,10 @@ img {
 
 #input-submit:hover {
  background-color: #ffd773;
-
+ curser: pointer;
 }
 
-.cards {
+article {
  margin: 1.3rem 1rem;
  border: 2px solid #607d8b;
  padding: .5rem 1rem;
@@ -85,10 +85,12 @@ a {
  color: #455a64;
  text-decoration: underline;
  text-decoration-color: #f2f4f4;
+ text-decoration-style: bold;
 }
 
 a:hover {
  color: #445A64;
+ curser: pointer;
  text-decoration: underline;
  text-decoration-color: #ffc107;
 }
@@ -98,7 +100,7 @@ a:hover {
 }
 
 .card__url {
- padding: 1rem 0 1rem;
+ padding: .5rem 0;
  color: #607d8b;
  font-size: 1rem;
 }
@@ -110,6 +112,10 @@ a:hover {
  text-decoration: none;
 }
 
-#card__url--right {
+#card__url--delete {
  float: right;
+}
+
+.read {
+  color: #f05a28;
 }

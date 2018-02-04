@@ -2,26 +2,27 @@ var userInputTitle = document.querySelector('#input-title');
 var userInputUrl = document.querySelector('#input-url');
 var userInputSubmit = document.querySelector('#input-submit');
 var bookmarkSection = document.querySelector('.cards');
-var bookmarkTitle = document.querySelector('h2');
-/*var bookmarkUrl = document.querySelector('.card__url');
-var bookmarkReadBtn = document.querySelector('#card__url--left');
-var bookmardDeleteBtn = document.querySelector('#card__url--right');*/
+var readBtn = document.querySelector('#card__url--read');
 
 userInputSubmit.addEventListener('click', appendBookmark);
+readBtn.addEventListener('click', readLink);
 
-function appendBookmark () {
-  var inputTitle = userInputTitle.value;
-  bookmarkSection.appendChild(userInputTitle);
+function readLink() {
+  if(event.target && event.target.matches === '.read-btn') {
+  readBtn.parentNode.parentNode.classList.toggle('read');
+ }
+}
 
-
-`<h2>${userInputTitle.value}</h2> 
-   <article class="card__url">
-     <a href="www.thewebsiteurl.com" class="card-hover" id="card__url--link">www.thewebsiteurl.com</a>
-   </article>
-
-   <article class="cards__read-delete">
-     <a href="#" class="card-hover" id="card__url--left">Read</a>
-     <a href="#" id="card__url--right">Delete</a>
-   </article>`
-   console.log(userInputTitle.value)
+function appendBookmark() {
+  var newArticle = document.createElement('article');
+  bookmarkSection.appendChild(newArticle);
+  newArticle.innerHTML = 
+    `<h2>${userInputTitle.value}</h2> 
+     <p class="card__url">
+       <a href="${userInputUrl.value}" class="card-hover" id="card__url--link" target="_blank">${userInputUrl.value}</a>
+     </p>
+     <p class="cards__read-delete">
+       <a href="#" class="card-hover read-btn" id="card__url--read">Read</a>
+       <a href="#" id="card__url--delete">Delete</a>
+     </p>`
 }
