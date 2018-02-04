@@ -65,7 +65,7 @@ img {
 
 }
 
-.cards {
+article {
  margin: 1.3rem 1rem;
  border: 2px solid #607d8b;
  padding: .5rem 1rem;
@@ -98,7 +98,7 @@ a:hover {
 }
 
 .card__url {
- padding: 1rem 0 1rem;
+ padding: .5rem 0;
  color: #607d8b;
  font-size: 1rem;
 }
