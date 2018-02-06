@@ -23,7 +23,7 @@ function appendBookmark() {
 
 function toggleRead(event){
   if(event.target.id === 'card__url--read'){
-    event.target.parentNode.parentNode.classList.toggle('read');
+    event.target.parentNode.parentNode.classList.toggle('read-article');
     event.target.classList.toggle('read');
   }
 };

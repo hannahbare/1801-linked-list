@@ -116,6 +116,14 @@ a:hover {
  float: right;
 }
 
+.read-article {
+  background-color: #f3f4f4;
+}
+
 .read {
+  color: #f05a28;
+}
+
+.read:hover {
   color: #f05a28;
 }
