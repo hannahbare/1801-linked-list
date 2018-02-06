@@ -58,6 +58,7 @@ img {
  color: #fff;
  font-size: 1.3rem;
  font-weight: 800;
+ width: 87.05%;
 }
 
 #input-submit:hover {
@@ -119,3 +120,43 @@ a:hover {
 .read {
   color: #f05a28;
 }
+
+/*__-----_______-------_______------_____----*/
+
+@media (min-width: 720px) {
+  
+
+
+  main {
+    /*position: relative;*/
+    height: 100vh;
+    width: 50%;
+  }
+
+  section {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 50%;
+  }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+  /*query landscape 
+ 
+ 'main' contents centered landscape.
+
+increase padding 100%
+
+logo increases in size 125%*/
