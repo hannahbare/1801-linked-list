@@ -80,6 +80,7 @@ h2 {
  padding-bottom: 0.45rem;
  border-bottom: 2px solid #cfd8dc;
  font-size: 1.3rem;
+ font-weight: 400;
 }
 
 a {
@@ -123,35 +124,62 @@ a:hover {
 
 /*__-----_______-------_______------_____----*/
 
-@media (min-width: 720px) {
-  
-
-
+@media (min-width: 700px) {
   main {
-    /*position: relative;*/
-    height: 100vh;
-    width: 50%;
+    position: fixed;
+    z-index: 1rem;
+    padding-top: 10rem;
+    height: 85vh;
+    width: 50vw;
+  }
+
+  h1 {
+    padding: 1rem 0 2.8rem 0;
+    font-size: 5.2rem;
+  }
+
+  img {
+    vertical-align: text-bottom;
+    height: 7.3rem;
+    width: 7.3rem;
+  }
+
+  div {
+    padding-top: 2.7rem;
+  }
+
+  .bookmark-input-field {
+     font-size: 2.2rem;
+     height: 3.1rem;
   }
 
   section {
     position: absolute;
     top: 0;
     right: 0;
-    height: 100vh;
-    width: 50%;
+    height: 50vh;
+    width: 50vw;
   }
 
+  article {
+    margin: 1.3rem 1.4rem;
+    padding: 1.2rem 1.2rem;
+    height: 9.4rem;
+    background-size: inherit;
+  }
 
+  h2 {
+    font-size: 2.2rem;
+  }
+  
+  .card__url {
+    font-size: 1.2rem;
+    margin: .6rem 0 -.1rem 0;
+  }
 
-
-}
-
-
-
-
-
-
-
+  .cards__read-delete {
+    padding-bottom: .5rem;
+  }
 
   /*query landscape 
  
