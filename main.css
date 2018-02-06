@@ -118,11 +118,17 @@ a:hover {
  float: right;
 }
 
+.read-article {
+  background-color: #f3f4f4;
+}
+
 .read {
   color: #f05a28;
 }
 
-/*__-----_______-------_______------_____----*/
+.read:hover {
+  color: #f05a28;
+}
 
 @media (min-width: 700px) {
   main {
@@ -181,11 +187,3 @@ a:hover {
   .cards__read-delete {
     padding-bottom: .5rem;
   }
-
-  /*query landscape 
- 
- 'main' contents centered landscape.
-
-increase padding 100%
-
-logo increases in size 125%*/
