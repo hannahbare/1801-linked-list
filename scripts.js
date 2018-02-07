@@ -2,31 +2,23 @@ var userInputTitle = document.querySelector('#input-title');
 var userInputUrl = document.querySelector('#input-url');
 var submitBtn = document.querySelector('#input-submit');
 var bookmarkSection = document.querySelector('.cards');
-var readBtn = document.querySelector('#card__url--read');
 
+userInputUrl.addEventListener('keyup', enableSubmitBtn);
 submitBtn.addEventListener('click', alertOrAppend);
 bookmarkSection.addEventListener('click', toggleRead);
 bookmarkSection.addEventListener('click', deleteCard);
-userInputUrl.addEventListener('keyup', enableSubmitBtn);
 
 function enableSubmitBtn(event) {
   if (userInputTitle.value && userInputUrl.value) {
     submitBtn.disabled = false;
-
-  //function that disables the button again;
-  // disableSubmitBtn();
   }
 }
 
-// function disableSubmitBtn(){
-//   submitBtn.disabled = true;
-// }
-
-
 function alertOrAppend(event){
-  if (userInputTitle.value && userInputUrl.value){
+  if (userInputTitle.value && userInputUrl.value) {
     appendBookmark();
-  } else if (userInputTitle.value === "" || userInputUrl.value === ""){
+    submitBtn.disabled = true;
+  } else if (userInputTitle.value === "" || userInputUrl.value === "") {
     alert('Please fill out both input fields.');
   } 
 }
@@ -63,7 +55,3 @@ function deleteCard(event){
       event.target.parentNode.parentNode.remove();    
     }
 };
-
-
-
-

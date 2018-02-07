@@ -1,4 +1,4 @@
-@import "reset.css"
+@import "reset.css";
 
 * {
 box-sizing: border-box;
@@ -135,7 +135,7 @@ a:hover {
     position: fixed;
     z-index: 1;
     padding-top: 10rem;
-    height: 85vh;
+    height: 100%;
     width: 50vw;
   }
 
