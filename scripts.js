@@ -7,6 +7,21 @@ var readBtn = document.querySelector('#card__url--read');
 submitBtn.addEventListener('click', alertOrAppend);
 bookmarkSection.addEventListener('click', toggleRead);
 bookmarkSection.addEventListener('click', deleteCard);
+userInputUrl.addEventListener('keyup', enableSubmitBtn);
+
+function enableSubmitBtn(event) {
+  if (userInputTitle.value && userInputUrl.value) {
+    submitBtn.disabled = false;
+
+  //function that disables the button again;
+  // disableSubmitBtn();
+  }
+}
+
+// function disableSubmitBtn(){
+//   submitBtn.disabled = true;
+// }
+
 
 function alertOrAppend(event){
   if (userInputTitle.value && userInputUrl.value){
@@ -43,7 +58,7 @@ function toggleRead(event){
   }
 };
 
-function deleteCard(){
+function deleteCard(event){
   if(event.target.id === 'card__url--delete'){
       event.target.parentNode.parentNode.remove();    
     }
