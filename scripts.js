@@ -27,6 +27,12 @@ function appendBookmark() {
        <a href="#" id="card__url--delete">Delete</a>
      </p>`
   bookmarkSection.appendChild(newArticle);
+  clearInputFields();
+}
+
+function clearInputFields(){
+  userInputTitle.value = " ";
+  userInputUrl.value = " ";
 }
 
 function toggleReadOrDelete(event){
