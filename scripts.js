@@ -5,7 +5,8 @@ var bookmarkSection = document.querySelector('.cards');
 var readBtn = document.querySelector('#card__url--read');
 
 submitBtn.addEventListener('click', alertOrAppend);
-bookmarkSection.addEventListener('click', toggleReadOrDelete);
+bookmarkSection.addEventListener('click', toggleRead);
+bookmarkSection.addEventListener('click', deleteCard);
 
 function alertOrAppend(event){
   if (userInputTitle.value && userInputUrl.value){
@@ -35,13 +36,17 @@ function clearInputFields(){
   userInputUrl.value = " ";
 }
 
-function toggleReadOrDelete(event){
+function toggleRead(event){
   if(event.target.id === 'card__url--read'){
     event.target.parentNode.parentNode.classList.toggle('read-article');
     event.target.classList.toggle('read');
-  } else if(event.target.id === 'card__url--delete'){
-    event.target.parentNode.parentNode.remove();
   }
+};
+
+function deleteCard(){
+  if(event.target.id === 'card__url--delete'){
+      event.target.parentNode.parentNode.remove();    
+    }
 };
 
 
