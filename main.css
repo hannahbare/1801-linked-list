@@ -133,16 +133,23 @@ a:hover {
 @media (min-width: 700px) {
   main {
     position: fixed;
-    z-index: 1rem;
+    z-index: 1;
     padding-top: 10rem;
     height: 85vh;
     width: 50vw;
   }
 
   h1 {
-    padding: 1rem 0 2.8rem 0;
+    padding: 1rem 0 2rem 0;
     font-size: 5.2rem;
   }
+
+/*  .error-message {
+    display: none;
+    margin: 0 0 .8rem;
+    color: #f05a28;
+    font-size: 1.4rem;
+  }*/
 
   img {
     vertical-align: text-bottom;

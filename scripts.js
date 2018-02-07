@@ -4,8 +4,16 @@ var submitBtn = document.querySelector('#input-submit');
 var bookmarkSection = document.querySelector('.cards');
 var readBtn = document.querySelector('#card__url--read');
 
-submitBtn.addEventListener('click', appendBookmark);
+submitBtn.addEventListener('click', alertOrAppend);
 bookmarkSection.addEventListener('click', toggleReadOrDelete);
+
+function alertOrAppend(event){
+  if (userInputTitle.value && userInputUrl.value){
+    appendBookmark();
+  } else if (userInputTitle.value === "" || userInputUrl.value === ""){
+    alert('Please fill out both input fields.');
+  } 
+}
 
 function appendBookmark() {
   var newArticle = document.createElement('article');
@@ -29,3 +37,7 @@ function toggleReadOrDelete(event){
     event.target.parentNode.parentNode.remove();
   }
 };
+
+
+
+
