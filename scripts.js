@@ -33,10 +33,18 @@ function appendBookmark() {
     bookmarkSection.appendChild(newArticle);
     submitBtn.disabled = true;
     clearInputFields();
+    countLinks();
     } else {
       alert('Please fill out both input fields.');
       submitBtn.disabled = true;
     }
+}
+
+function countLinks(){
+  var linkCounter = document.querySelector('#link-counter');
+  var allCards = document.querySelectorAll('article');
+  var cardAmount = allCards.length;
+  linkCounter.innerText = cardAmount;
 }
 
 function clearInputFields(){
@@ -56,3 +64,6 @@ function deleteCard(event){
       event.target.parentNode.parentNode.remove();    
     }
 };
+
+
+
