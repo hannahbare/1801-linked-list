@@ -66,6 +66,10 @@ img {
  curser: pointer;
 }
 
+#input-submit:disabled {
+  opacity: 0.5;
+}
+
 article {
  margin: 1.3rem 1rem;
  border: 2px solid #607d8b;
