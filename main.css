@@ -191,3 +191,9 @@ a:hover {
   .cards__read-delete {
     padding-bottom: .5rem;
   }
+
+  p  {
+    padding-top: 1rem;
+    font-style: .5rem;
+    font-family: 'Open Sans', sans-serif;
+  }
